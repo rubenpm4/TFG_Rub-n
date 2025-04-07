@@ -1,71 +1,94 @@
-# TFG_Ruben
-Aplicación web de resultados de fútbol en vivo
+# Kizuma: Red Social para Conectar Personas
 
-# ScoreFutbol: Resultados de Fútbol en Tiempo Real
+## 🧠 Introducción
 
-## Introducción
-El fútbol es el deporte más seguido a nivel mundial, y millones de aficionados buscan información en tiempo real sobre los partidos. Actualmente, muchas plataformas ofrecen estos datos, pero suelen estar saturadas de publicidad o requieren registros innecesarios.
+Las redes sociales actuales suelen priorizar algoritmos complejos, monetización agresiva y funcionalidades que muchas veces desvían del propósito original: conectar personas.  
+**Kizuma** (inspirado en *Kizuna*, "lazo" en japonés) es una red social minimalista centrada en la conexión humana real.
 
-**ScoreFutbol** es una aplicación web que permite a los usuarios ver los resultados de los partidos en tiempo real, con una interfaz rápida, ligera y sin distracciones. Se integrará con APIs deportivas para ofrecer actualizaciones instantáneas, estadísticas básicas y la posibilidad de seguir equipos favoritos.
+La aplicación permitirá a los usuarios:
+- Registrarse y crear perfiles personales.
+- Agregar amigos y gestionar una lista de contactos.
+- Publicar actualizaciones (texto, imágenes) y comentar publicaciones de otros.
+- Interactuar sin algoritmos ni distracciones.
 
-Este proyecto busca proporcionar una solución accesible para los aficionados al fútbol, sin necesidad de descargar aplicaciones o depender de múltiples fuentes de información.
+---
 
-## Finalidad
-El objetivo de **ScoreFutbol** es desarrollar una aplicación web que permita a los usuarios consultar resultados de partidos en vivo y estadísticas de manera sencilla y rápida, accesible desde cualquier navegador sin necesidad de instalación.
+## 🎯 Finalidad
 
-## Objetivos
+Desarrollar una red social **básica pero funcional** utilizando Laravel, enfocada en la simplicidad, privacidad y usabilidad.
+
+---
+
+## 🎯 Objetivos
 
 ### Objetivo principal
-- Crear una aplicación web optimizada que muestre resultados de fútbol en tiempo real.
+- Crear una red social funcional con perfiles, amistades, publicaciones y comentarios usando Laravel.
 
 ### Objetivos específicos
-1. Obtener y mostrar datos en vivo mediante la integración con APIs deportivas.
-2. Permitir a los usuarios seguir equipos favoritos y recibir alertas dentro de la web.
-3. Incorporar estadísticas básicas, como posesión de balón, tiros a puerta y tarjetas.
-4. Optimizar el rendimiento para tiempos de carga rápidos y buena experiencia en navegadores.
-5. Implementar un diseño responsivo, adaptado para pantallas de laptop y escritorio.
+1. Autenticación segura (registro, login, recuperación de contraseña).
+2. Sistema de amistad: solicitudes, aceptación/rechazo, lista de contactos.
+3. Publicaciones y comentarios: CRUD completo.
+4. Perfiles personalizables: nombre, biografía, foto de perfil.
+5. Feed principal con publicaciones de amigos en orden cronológico.
+6. Interfaz moderna, ligera y responsiva.
 
-## Medios y recursos necesarios
+---
 
-### Software y herramientas
-- **Lenguaje de programación:** TypeScript o JavaScript.
-- **Frameworks/librerías:** React.js con Next.js para el frontend.
-- **APIs deportivas:** Football-Data.org, API-FOOTBALL, SportMonks.
-- **Backend:** Node.js con Express o Firebase para gestión de datos.
-- **Base de datos:** MongoDB o Firebase Firestore.
-- **Diseño de UI/UX:** Tailwind CSS para estilos, Figma para prototipado.
-- **Plataforma de desarrollo:** Visual Studio Code.
+## 🛠️ Medios y Recursos
 
-### Conocimientos específicos
-- Desarrollo web con **Next.js y React.js**.
-- Consumo de **APIs RESTful**.
-- Bases de datos **NoSQL (MongoDB o Firebase Firestore)**.
-- Diseño de interfaces responsivas con **Tailwind CSS**.
+### Tecnologías
+- **Backend:** Laravel 10 (PHP)
+- **Frontend:** Blade o Livewire
+- **Base de datos:** MySQL
+- **Autenticación:** Laravel Breeze o Jetstream
+- **Diseño:** Tailwind CSS (preferido) o Bootstrap
+- **Hosting:** Laravel Forge, Vercel (adaptado), o servidor compartido
 
-## Planificación estimada
+### APIs opcionales
+- **Cloudinary** para imágenes.
+- **Pusher** para notificaciones en tiempo real.
 
-| **Fase** | **Descripción** | **Duración** |
-|----------|---------------|-------------|
-| **Fase 1: Análisis** | Definir requisitos, seleccionar APIs y planificar arquitectura. | 1-2 semanas |
-| **Fase 2: Diseño** | Creación de prototipos en Figma, diseño de interfaz y estructura de datos. | 2 semanas |
-| **Fase 3: Implementación** | Desarrollo del frontend con React y backend con Node.js. | 4-6 semanas |
-| **Fase 4: Pruebas y Lanzamiento** | Pruebas funcionales, optimización de rendimiento, corrección de errores y despliegue en Vercel o Netlify. | 3 semanas |
+### Conocimientos requeridos
+- Laravel Eloquent y relaciones (User -> Friends, Post -> Comments).
+- Patrón MVC.
+- Migraciones y bases de datos relacionales.
+- Diseño de interfaces con Tailwind CSS.
 
-## Bibliografía y referencias iniciales
+---
 
-### APIs de datos deportivos
-- [Football-Data.org](https://www.football-data.org/)
-- [API-FOOTBALL](https://www.api-football.com/)
-- [SportMonks](https://www.sportmonks.com/)
+## 🗓️ Planificación Estimada
 
-### Desarrollo web
-- "Full-Stack React, TypeScript, and Node" – David Choi.
-- "Next.js Handbook" – Flavio Copes.
+| Fase                 | Descripción                                                   | Duración     |
+|----------------------|---------------------------------------------------------------|--------------|
+| **Fase 1 - Análisis** | Definir requisitos y arquitectura del sistema                 | 1-2 semanas  |
+| **Fase 2 - Diseño**   | Prototipos en Figma, estructura de datos e interfaz           | 2 semanas    |
+| **Fase 3 - Desarrollo**| Implementación del backend y frontend                        | 4-6 semanas  |
+| **Fase 4 - Pruebas y Lanzamiento** | Testing manual, optimización, correcciones   | 3 semanas    |
 
-### Bases de datos y backend
-- "MongoDB: The Definitive Guide" – Shannon Bradshaw.
-- "Node.js Design Patterns" – Mario Casciaro.
+---
 
-### Diseño de interfaces
-- "Refactoring UI" – Adam Wathan & Steve Schoger.
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+## 📚 Bibliografía y Referencias
+
+- [Documentación Oficial de Laravel 10](https://laravel.com/docs/10.x)
+- [Laravel Breeze (Autenticación simple)](https://laravel.com/docs/10.x/starter-kits#laravel-breeze)
+- [Eloquent Relationships](https://laravel.com/docs/10.x/eloquent-relationships)
+- [Tailwind CSS](https://tailwindcss.com/docs)
+- [Refactoring UI](https://refactoringui.com/book/)
+
+---
+
+## 📌 Diferencial del Proyecto
+
+✔ Interfaz limpia y ligera  
+✔ Sin algoritmos manipulando el feed  
+✔ Sin publicidad invasiva  
+✔ Proyecto open-source (potencialmente)
+
+---
+
+## 🚀 Estado actual del desarrollo
+
+**[Por iniciar]** – Estructura del proyecto y entorno de desarrollo pendiente de configurar.
+
+---
+
